@@ -61,8 +61,20 @@ div.img-home-content{
     margin: 2rem 1rem;
 }
 
-
 .images-page{
     display: flex;
     flex-direction: column;
+}
+
+table, td, th, tr{
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+table{
+    width: 800px;
+}
+
+th{
+    background-color: rgb(72, 222, 72);
 }
