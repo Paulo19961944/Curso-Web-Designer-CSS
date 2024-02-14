@@ -6,6 +6,7 @@
 
 
 body {
+    background-image: url("./imagens/pattern-5.png");
     display: flex;
     flex-direction: column;
     width: 100%;
