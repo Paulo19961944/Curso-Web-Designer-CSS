@@ -81,12 +81,15 @@ td,
 th,
 tr {
     font-family: "Inconsolata", monospace;
-    border: 1px solid #000;
-    border-collapse: collapse;
+    border: 1px double #000;
 }
 
 table {
     width: 800px;
+}
+
+tr:nth-child(even){
+    background-color: #dfdcdc;
 }
 
 th {
