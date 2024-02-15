@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #fafafa;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 100%;
+            min-height: 100vh;
+            font-weight: bold;
+        }
+
+        /*Medida Fixa e Absoluta*/
+        div.quadrado-1{
+            margin-top: 2rem;
+            border: 5px solid #000;
+            background-color: #ed6363;
+            color: #000;
+            width: 400px;
+            height: 400px;
+        }
+        
+        /*Em Relação ao Elemento Pai*/
+        div.quadrado-2{
+            margin-top: 2rem;
+            border: 5px solid #000;
+            background-color: #ff0;
+            color: #000;
+            width: 40%;
+            height: 400px;
+        }
+
+        /*Em Relação ao Elemento Pai*/
+        div.filho{
+            background-color: rgb(55, 162, 55);
+            width: 50%;
+            height: 200px;
+        }
+    </style>
+    <title>Unidades de Medida</title>
+</head>
+<body>
+    <div class="quadrado-1">
+        Largura em Pixel
+    </div>
+    <div class="quadrado-2">
+        <div class="filho">
+            Largura em %
+        </div>
+    </div>
+</body>
+</html>
