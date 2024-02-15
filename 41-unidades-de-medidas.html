@@ -4,47 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        
         body{
             background-color: #fafafa;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            max-width: 100%;
-            min-height: 100vh;
             font-weight: bold;
+        }
+
+        div{
+            border: 1px solid #000;
+            height: 30px;
         }
 
         /*Medida Fixa e Absoluta*/
         div.quadrado-1{
-            margin-top: 2rem;
-            border: 5px solid #000;
             background-color: #ed6363;
             color: #000;
             width: 400px;
-            height: 400px;
         }
         
         /*Em Relação ao Elemento Pai*/
         div.quadrado-2{
-            margin-top: 2rem;
-            border: 5px solid #000;
             background-color: #ff0;
             color: #000;
             width: 40%;
-            height: 400px;
+        }
+        
+        div.quadrado-3{
+            max-width: 700px;
+            background-color: rgb(235, 113, 178);
+            color: #000;
         }
 
-        /*Em Relação ao Elemento Pai*/
-        div.filho{
-            background-color: rgb(55, 162, 55);
-            width: 50%;
-            height: 200px;
+        div.quadrado-4{
+            width: 1200px;
+            min-width: 500px;
+            background-color: #0ff;
+            color: #000;
         }
+
     </style>
     <title>Unidades de Medida</title>
 </head>
@@ -53,9 +50,13 @@
         Largura em Pixel
     </div>
     <div class="quadrado-2">
-        <div class="filho">
-            Largura em %
-        </div>
+        Largura em %
+    </div>
+    <div class="quadrado-3">
+        Largura Máxima
+    </div>
+    <div class="quadrado-4">
+        Largura Minima
     </div>
 </body>
 </html>
