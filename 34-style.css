@@ -6,6 +6,7 @@
 
 
 body {
+    position: relative;
     background-image: url("./imagens/pattern-5.png");
     display: flex;
     flex-direction: column;
@@ -95,4 +96,19 @@ tr:nth-child(even){
 
 th {
     background-color: #48de48;
+}
+
+footer{
+    position: absolute;
+    bottom: -8rem;
+    width: 100%;
+    margin-top: 2rem;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+footer p{
+    color: #fafafa;
 }
