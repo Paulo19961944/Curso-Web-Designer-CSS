@@ -7,77 +7,87 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <style>
+        /*Estilo Global*/
         *{
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
+            padding: 0; /*Zera a Margin*/
+            margin: 0; /*Zera o Padding*/
+            box-sizing: border-box; /*Todo o Contéudo sem mudar o tamanho do Box Model*/
         }
+
+        /*Conteudo da página*/
         body{
-            max-width: 100%;
-            min-height: 100vh;
-            background-image: url("imagens/pattern-5.png");
-            font-family: "Titillium Web", sans-serif;
+            max-width: 100%; /*Largura maxima*/
+            min-height: 100vh; /*Altura Máxima*/
+            background-image: url("imagens/pattern-5.png"); /*Pattern de Fundo*/
+            font-family: "Titillium Web", sans-serif; /*Fonte do Google - Sans Serif*/
         }
 
+        /*Menu de Navegação*/
         nav{
-            position: fixed;
-            top: 0;
-            background-color: #000;
-            display: flex;
-            justify-content: center;
-            gap: 16px;
-            width: 100%;
-            border: 1px solid #000;
-            padding: 1.5rem;
+            position: fixed; /*Posição Fixa*/
+            top: 0; /*Fixo no Topo*/
+            background-color: #000; /*Cor de Fundo Preto*/
+            display: flex; /*Flexbox*/
+            justify-content: center; /*Alinha os itens ao Centro*/
+            gap: 16px; /*Espaçamento de 16px*/
+            width: 100%; /*Largura de 100%*/
+            border: 1px solid #000; /*Borda sólida de 1 pixel*/
+            padding: 1.5rem; /*Espaçamento Interno*/
         }
 
+        /*Botão do Link*/
         nav a{
-            border: 1px solid #f0f0f0;
-            text-decoration: none;
-            color: #fafafa;
-            padding: 0.8rem;
-            border-radius: 4px;
+            border: 1px solid #f0f0f0; /*Borda de 1 px sólida e branca*/
+            text-decoration: none; /*Sem sublinhado*/
+            color: #fafafa; /*Cor da letra branca*/
+            padding: 0.8rem; /*Espaçamento Interno*/
+            border-radius: 4px; /*Borda Arredondada*/
         }
 
+        /*Botão ao Passar o mouse*/
         nav a:hover{
-            background-color: #fafafa;
-            color: #000;
+            background-color: #fafafa; /*Cor de Fundo Branca*/
+            color: #000; /*Cor da letra preta*/
         }
 
+        /*Título*/
         h1{
-            font-size: 2rem;
-            font-family: "Handlee", cursive;
-            font-weight: 400;
-            font-style: normal;
-            margin-top: 8rem;
+            font-size: 2rem; /*Tamanho da Fonte*/
+            font-family: "Handlee", cursive; /*Fonte Handwritig do Google*/
+            font-weight: 400; /*Peso da Fonte*/
+            font-style: normal; /*Stilo normal*/
+            margin-top: 8rem; /*Espaçamento Externo do topo de 8x a raiz do documento html*/
         }
 
+        /*Imagens*/
         img{
-            float: right;
-            border-radius: 16px;
+            float: right; /*Flutua a direita*/
+            border-radius: 16px; /*Bordas Arredondadas*/
             margin: 0 1rem 2rem; /*Top - Right e Left - Bottom*/
         }
 
+        /*Parágrafos*/
         p{
-            margin-top: 2rem;
-            font-size: 1.2rem;
-            font-weight: 400;
-            font-style: normal;
+            margin-top: 2rem; /*Espaçamento  superior de 2x a Raiz do Documento*/
+            font-size: 1.2rem; /*Tamanho da Fonte*/
+            font-weight: 400; /*Peso da Fonte*/
+            font-style: normal; /*Estilo da Fonte Normal*/
         }
 
+        /*Rodapé*/
         footer{
-            width: 100%;
-            position: relative;
-            background-color: #000;
-            display: flex;
-            justify-content: center;
-            padding: 48px;
+            width: 100%; /*Largura de 100%*/ 
+            background-color: #000; /*Cor de Fundo Preto*/
+            display: flex; /*Flexbox*/
+            justify-content: center; /*Alinhamento ao Centro*/
+            padding: 48px; /*Espaçamento Interno de 48px*/
         }
 
+        /*Parágrafo do Rodapé*/
         footer p{
-            margin: 0;
-            color: #fafafa;
-            text-shadow: 0.75px 0.75px 0.75px #fafafa;
+            margin: 0; /*Reseta a Margem*/
+            color: #fafafa; /*Cor da Fonte Branca*/
+            text-shadow: 0.75px 0.75px 0.75px #fafafa; /*Sombra do Texto Branca*/
         }
     </style>
     <title>Exercicio</title>
