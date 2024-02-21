@@ -13,14 +13,15 @@ body{
     font-family: "Titillium Web", sans-serif; /*Fonte do Google - Sans Serif*/
 }
 
+/*Icone do Menu de Navegação*/
 .nav-btn{
-    display: none;
-    width: 40px;
-    height: 40px;
-    font-size: 20px;
-    color: #fafafa;
-    background-color: transparent;
-    border: none;
+    display: none; /*Esconde o Icone do Menu de Navegação*/
+    width: 40px; /*Largura de 40px*/
+    height: 40px; /*Altura de 40px*/
+    font-size: 20px; /*Tamanho da Fonte*/
+    color: #fafafa; /*Cor de Fonte Branca*/
+    background-color: transparent; /*Cor de Fundo Transparente*/
+    border: none; /*Sem Bordas*/
 }
 
 /*Menu de Navegação*/
