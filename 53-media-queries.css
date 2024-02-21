@@ -2,11 +2,19 @@
     img{
         width: 30%;
     }
+
+    h1{
+        font-size: 1.7rem;
+    }
+
+    p, a{
+        font-size: 0.9rem;
+    }
 }
 
 @media screen and (max-width:840px) {
     p, a{
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     footer{
