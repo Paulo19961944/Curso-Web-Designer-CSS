@@ -73,7 +73,7 @@
 @media screen and (max-width:426px) {
     /*Titulo*/
     h1{
-        font-size: 0.6rem; /*Tamanho da Fonte*/
+        font-size: 1.2rem; /*Tamanho da Fonte*/
     }
     p, a{
         font-size: 0.6rem; /*Tamanho da Fonte*/
