@@ -7,8 +7,8 @@
 
 /*Conteudo da página*/
 body{
-    max-width: 100%; /*Largura maxima*/
-    min-height: 100vh; /*Altura Máxima*/
+    max-width: 100%; /*Largura Maxima*/
+    min-height: 100vh; /*Altura Minima*/
     background-image: url("imagens/pattern-5.png"); /*Pattern de Fundo*/
     font-family: "Titillium Web", sans-serif; /*Fonte do Google - Sans Serif*/
 }
