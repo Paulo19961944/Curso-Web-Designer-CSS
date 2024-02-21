@@ -16,17 +16,19 @@
     }
 }
 
+@media screen and (max-width: 1024px) {
+    /*Rodapé*/
+    footer{
+        position: fixed; /*Posição Fixa*/
+        bottom: 0; /*Alinha no Final da Tela*/
+    }
+}
+
 /*Tablet*/
 @media screen and (max-width:840px) {
     /*Parágrafos*/
     p, a{
         font-size: 0.8rem; /*Tamanho da Fonte*/
-    }
-
-    /*Rodapé*/
-    footer{
-        position: fixed; /*Posição Fixa*/
-        bottom: 0; /*Alinha no Final da Tela*/
     }
 }
 
