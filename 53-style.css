@@ -1,0 +1,94 @@
+/*Estilo Global*/
+*{
+    padding: 0; /*Zera a Margin*/
+    margin: 0; /*Zera o Padding*/
+    box-sizing: border-box; /*Todo o Contéudo sem mudar o tamanho do Box Model*/
+}
+
+/*Conteudo da página*/
+body{
+    max-width: 100%; /*Largura maxima*/
+    min-height: 100vh; /*Altura Máxima*/
+    background-image: url("imagens/pattern-5.png"); /*Pattern de Fundo*/
+    font-family: "Titillium Web", sans-serif; /*Fonte do Google - Sans Serif*/
+}
+
+.nav-btn{
+    display: none;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: #fafafa;
+    background-color: transparent;
+    border: none;
+}
+
+/*Menu de Navegação*/
+nav.navbar-navigation{
+    position: fixed; /*Posição Fixa*/
+    top: 0; /*Fixo no Topo*/
+    background-color: #000; /*Cor de Fundo Preto*/
+    display: flex; /*Flexbox*/
+    justify-content: center; /*Alinha os itens ao Centro*/
+    width: 100%; /*Largura de 100%*/
+    border: 1px solid #000; /*Borda sólida de 1 pixel*/
+    padding: 2.5rem; /*Espaçamento Interno*/
+}
+
+/*Botão do Link*/
+nav a{
+    border: 1px solid #f0f0f0; /*Borda de 1 px sólida e branca*/
+    text-decoration: none; /*Sem sublinhado*/
+    color: #fafafa; /*Cor da letra branca*/
+    padding: 0.8rem; /*Espaçamento Interno*/
+    border-radius: 4px; /*Borda Arredondada*/
+    margin: 0.3rem;
+}
+
+/*Botão ao Passar o mouse*/
+nav a:hover{
+    background-color: #fafafa; /*Cor de Fundo Branca*/
+    color: #000; /*Cor da letra preta*/
+}
+
+/*Título*/
+h1{
+    font-size: 2rem; /*Tamanho da Fonte*/
+    font-family: "Handlee", cursive; /*Fonte Handwritig do Google*/
+    font-weight: 400; /*Peso da Fonte*/
+    font-style: normal; /*Stilo normal*/
+    margin-top: 8rem; /*Espaçamento Externo do topo de 8x a raiz do documento html*/
+}
+
+/*Imagens*/
+img{
+    float: right; /*Flutua a direita*/
+    border-radius: 16px; /*Bordas Arredondadas*/
+    margin: 0 1rem 2rem; /*Top - Right e Left - Bottom*/
+}
+
+/*Parágrafos*/
+p{
+    margin-top: 2rem; /*Espaçamento  superior de 2x a Raiz do Documento*/
+    font-size: 1.2rem; /*Tamanho da Fonte*/
+    font-weight: 400; /*Peso da Fonte*/
+    font-style: normal; /*Estilo da Fonte Normal*/
+}
+
+/*Rodapé*/
+footer{
+    position: relative;
+    bottom: 0;
+    width: 100%; /*Largura de 100%*/ 
+    background-color: #000; /*Cor de Fundo Preto*/
+    display: flex; /*Flexbox*/
+    justify-content: center; /*Alinhamento ao Centro*/
+    padding: 48px; /*Espaçamento Interno de 48px*/
+}
+
+/*Parágrafo do Rodapé*/
+footer p{
+    margin: 0; /*Reseta a Margem*/
+    color: #fafafa; /*Cor da Fonte Branca*/
+    text-shadow: 0.75px 0.75px 0.75px #fafafa; /*Sombra do Texto Branca*/
+}
