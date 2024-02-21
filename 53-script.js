@@ -15,7 +15,7 @@ navBtn.addEventListener("click", () => {
 //Adiciona Evento ao Clicar Fora do Botão de Menu
 document.addEventListener("click", (event) => {
     const isClickedonMenu = navbarContent.contains(event.target); // Verifica se Clicou no Menu
-    const isClickedOnMenuIcon = navBtn.contains(event.target); //Verifica se Clicou no Botão de Menu
+    const isClickedOnMenuIcon = navBtn.contains(event.target); // Verifica se Clicou no Botão de Menu
 
     // Se Não Clicou no Menu ou no Botão, então reseta o Padrão Original
     if (!isClickedonMenu && !isClickedOnMenuIcon) {
