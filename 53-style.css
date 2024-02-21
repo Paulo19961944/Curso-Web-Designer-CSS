@@ -43,7 +43,7 @@ nav a{
     color: #fafafa; /*Cor da letra branca*/
     padding: 0.8rem; /*Espaçamento Interno*/
     border-radius: 4px; /*Borda Arredondada*/
-    margin: 0.3rem;
+    margin: 0.3rem; /*Margem de 30% do tamanho da Raiz do Documento*/
 }
 
 /*Botão ao Passar o mouse*/
