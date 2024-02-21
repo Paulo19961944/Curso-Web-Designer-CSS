@@ -78,8 +78,8 @@ p{
 
 /*Rodapé*/
 footer{
-    position: relative;
-    bottom: 0;
+    position: relative; /*Posição Relativa*/
+    bottom: 0; /*Na parte inferior da Tela*/
     width: 100%; /*Largura de 100%*/ 
     background-color: #000; /*Cor de Fundo Preto*/
     display: flex; /*Flexbox*/
