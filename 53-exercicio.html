@@ -22,17 +22,26 @@
             font-family: "Titillium Web", sans-serif; /*Fonte do Google - Sans Serif*/
         }
 
+        .nav-btn{
+            display: none;
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            color: #fafafa;
+            background-color: transparent;
+            border: none;
+        }
+
         /*Menu de Navegação*/
-        nav{
+        nav.navbar-navigation{
             position: fixed; /*Posição Fixa*/
             top: 0; /*Fixo no Topo*/
             background-color: #000; /*Cor de Fundo Preto*/
             display: flex; /*Flexbox*/
             justify-content: center; /*Alinha os itens ao Centro*/
-            gap: 16px; /*Espaçamento de 16px*/
             width: 100%; /*Largura de 100%*/
             border: 1px solid #000; /*Borda sólida de 1 pixel*/
-            padding: 1.5rem; /*Espaçamento Interno*/
+            padding: 2.5rem; /*Espaçamento Interno*/
         }
 
         /*Botão do Link*/
@@ -42,6 +51,7 @@
             color: #fafafa; /*Cor da letra branca*/
             padding: 0.8rem; /*Espaçamento Interno*/
             border-radius: 4px; /*Borda Arredondada*/
+            margin: 0.3rem;
         }
 
         /*Botão ao Passar o mouse*/
@@ -76,6 +86,8 @@
 
         /*Rodapé*/
         footer{
+            position: relative;
+            bottom: 0;
             width: 100%; /*Largura de 100%*/ 
             background-color: #000; /*Cor de Fundo Preto*/
             display: flex; /*Flexbox*/
@@ -89,16 +101,94 @@
             color: #fafafa; /*Cor da Fonte Branca*/
             text-shadow: 0.75px 0.75px 0.75px #fafafa; /*Sombra do Texto Branca*/
         }
+
+        @media screen and (max-width:1300px) {
+            img{
+                width: 30%;
+            }
+        }
+        
+        @media screen and (max-width:840px) {
+            p, a{
+                font-size: 0.9rem;
+            }
+
+            footer{
+                position: fixed;
+                bottom: 0;
+            }
+        }
+
+        @media screen and (max-width:583px) {
+            h1{
+                font-size: 0.7rem,;
+            }
+            p, a{
+                font-size: 0.7rem;
+            }
+
+            nav.navbar-navigation{
+                justify-content: flex-start;
+            }
+
+            nav a{
+                padding: 0.8rem 3rem; /*Espaçamento Interno*/
+                text-align: center;
+            }
+            .nav-btn{
+                display: block;
+            }
+
+            .navbar-content{
+                display: none;
+            }
+
+            nav.navbar-navigation{
+                padding: 1.5rem;
+            }
+        }
+
+        @media screen and (max-width:426px) {
+            h1{
+                font-size: 0.6rem,;
+            }
+            p, a{
+                font-size: 0.6rem;
+            }   
+
+            nav.navbar-navigation{
+                padding: 1.5rem;
+            }
+
+            .nav-btn{
+                font-size: 18px;
+            }
+            nav a{
+                padding: 0.6rem 2rem; /*Espaçamento Interno*/
+            }
+        }
+
+        @media screen and (max-width:376px) {
+            h1{
+                font-size: 1.5rem;
+            }
+            p, a{
+                font-size: 0.5rem;
+            }
+        }
     </style>
     <title>Exercicio</title>
 </head>
 <body>
     <header>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Quem Somos</a>
-            <a href="#">Sobre Nós</a>
-            <a href="#">Contato</a>
+        <nav class="navbar-navigation">
+            <button class="nav-btn">☰</button>
+            <div class="navbar-content">
+                <a href="#">Home</a>
+                <a href="#">Quem Somos</a>
+                <a href="#">Sobre Nós</a>
+                <a href="#">Contato</a>
+            </div>
         </nav>
     </header>
     <h1>Programação Fácil</h1>
@@ -111,5 +201,29 @@
     <footer>
         <p>PAULO HENRIQUE AZEVEDO DO NASCIMENTO - SENAI BARUERI</p>
     </footer>
+    <script>
+        const navbarNavigation = document.querySelector(".navbar-navigation");
+        const navBtn = document.querySelector(".nav-btn");
+        const navbarContent = document.querySelector(".navbar-content");
+        navBtn.addEventListener("click", () => {
+            navbarContent.style.display = "flex";
+            navbarContent.style.flexDirection = "column";
+            navbarNavigation.style.alignItems = "center"
+            navbarNavigation.style.justifyContent = "center"
+            navBtn.style.display = "none";
+        });
+
+        document.addEventListener("click", (event) => {
+            const isClickedonMenu = navbarContent.contains(event.target);
+            const isClickedOnMenuIcon = navBtn.contains(event.target);
+            if (!isClickedonMenu && !isClickedOnMenuIcon) {
+                navbarContent.style.display = "";
+                navbarContent.style.flexDirection = "";
+                navbarNavigation.style.alignItems = ""
+                navbarNavigation.style.justifyContent = ""
+                navBtn.style.display = "";
+            }
+        });
+    </script>
 </body>
 </html>
