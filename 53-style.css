@@ -65,7 +65,7 @@ h1{
 img{
     float: right; /*Flutua a direita*/
     border-radius: 16px; /*Bordas Arredondadas*/
-    margin: 0 1rem 2rem; /*Top - Right e Left - Bottom*/
+    margin: 0 0 2rem 2rem; /*Top - Right - Left - Bottom*/
 }
 
 /*Parágrafos*/
@@ -74,6 +74,10 @@ p{
     font-size: 1.2rem; /*Tamanho da Fonte*/
     font-weight: 400; /*Peso da Fonte*/
     font-style: normal; /*Estilo da Fonte Normal*/
+}
+
+main section{
+    padding: 1.5rem;
 }
 
 /*Rodapé*/
